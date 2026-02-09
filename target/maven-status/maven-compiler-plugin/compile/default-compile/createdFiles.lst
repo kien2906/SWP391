@@ -1,0 +1,6 @@
+DALs\ReviewDAO.class
+Controller\ReviewController.class
+com\mycompany\bailammonswp\JakartaRestConfiguration.class
+com\mycompany\bailammonswp\resources\JakartaEE91Resource.class
+Model\Review.class
+Utils\DBContext.class
