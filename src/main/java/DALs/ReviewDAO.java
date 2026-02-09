@@ -21,7 +21,7 @@ public class ReviewDAO extends DBContext {
     public ReviewDAO() {
         super();
     }
-
+//
 //    private int reviewId;
 //    private int customerId;
 //    private int medicineId;
