@@ -33,7 +33,7 @@ public class ReviewController extends HttpServlet {
         request.setAttribute("reviews", r);
         request.getRequestDispatcher("views/review.jsp").forward(request, response);
         
-        // 
+    
     }
 
 }

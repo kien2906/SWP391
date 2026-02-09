@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 
 /**
  *
- * @author PC
+ * @author PCk
  */
 public class DBContext {
 

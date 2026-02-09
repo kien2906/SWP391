@@ -8,7 +8,7 @@ import java.sql.Timestamp;
 
 /**
  *
- * @author PC
+ * @author PCk
  */
 public class Review {
 
