@@ -32,8 +32,8 @@ public class ReviewController extends HttpServlet {
        System.out.println("Review size = " + r.size());
         request.setAttribute("reviews", r);
         request.getRequestDispatcher("views/review.jsp").forward(request, response);
-                
         
+        // 
     }
 
 }
