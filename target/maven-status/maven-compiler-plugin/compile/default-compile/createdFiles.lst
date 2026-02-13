@@ -1,6 +1,10 @@
 DALs\ReviewDAO.class
-Controller\ReviewController.class
 com\mycompany\bailammonswp\JakartaRestConfiguration.class
+Model\ReviewDTO.class
+controllers\View_all_owner_reviews.class
 com\mycompany\bailammonswp\resources\JakartaEE91Resource.class
 Model\Review.class
+controllers\Delete_owner_review.class
+controllers\CreatedReview.class
+controllers\ViewRiews.class
 Utils\DBContext.class

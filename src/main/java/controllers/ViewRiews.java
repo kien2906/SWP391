@@ -5,7 +5,7 @@
 package controllers;
 
 import DALs.ReviewDAO;
-import Model.Review;
+import Model.ReviewDTO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -18,22 +18,40 @@ import java.util.List;
  *
  * @author PC
  */
-public class View_all_owner_reviews extends HttpServlet {
+public class ViewRiews extends HttpServlet {
 
+
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
+     
         
-        int customerId=1;
+        
+        
+        int medicine =1;
+        
         ReviewDAO dao= new ReviewDAO();
-          
-        List<Review> r= dao.getReviewByCustomer(customerId);
-       System.out.println("Review size = " + r.size());
-        request.setAttribute("reviews", r);
-        request.getRequestDispatcher("views/View_all_owner_reviews.jsp").forward(request, response);
+        List<ReviewDTO> r= dao.getReviewsByMedicine(medicine);
         
-    
+        request.setAttribute("reviews", r);
+        request.getRequestDispatcher("views/viewReview.jsp").forward(request, response);
+        
+
+        
+        
+        
     }
 
+
+    
+ 
 }
